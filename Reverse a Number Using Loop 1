@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int rem = 0;
+        if(n>0 && n <1000000000){
+            while(n>0){
+                rem = n%10;
+                n = n/10;
+                 System.out.print(rem);
+            }
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
