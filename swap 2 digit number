@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int t = n;
+        int d = 1;
+        if(n>9 || n>=100){
+             while (t >= 100) {
+                t /= 10;
+                d *= 10;
+            }
+            int n1 = t / 10;
+            int n2 = t % 10;
+            int s = n2 * 10 + n1;
+            System.out.println(s);
+        }
+        else{
+            System.out.println("STDOUT");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
