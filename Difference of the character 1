@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int starCount = 0;
+        int hashCount = 0;
+        for (char ch : s.toCharArray()) {
+            if (ch == '*') {
+                starCount++;
+            } else if (ch == '#') {
+                hashCount++;
+            }
+        }
+        int diff;
+        if(starCount>hashCount){
+             diff = starCount - hashCount;}
+        else{
+             diff = hashCount - starCount;
+        }
+        if(diff%2==0 && diff!=0) {
+            System.out.println("The Difference of the character in the given string: 0" +diff);
+        } 
+        else if(diff==0){
+            System.out.println("0");}
+        else {
+            System.out.print("The Difference of the character in the given string: 00" +diff);
+       
+        }
+       
+    }
+}
