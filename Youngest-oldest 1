@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        for(int i=0;i<size;i++){
+            arr[i]=sc.nextInt();
+        }
+        int y = arr[0];
+        int o = arr[0];
+        for(int i=1;i<size;i++){
+            if(arr[i]>o){
+            o = arr[i];}
+           else if(arr[i]<y){
+            y = arr[i];
+        }}
+         System.out.println("Youngest="+y);
+         System.out.println("Oldest="+o);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
